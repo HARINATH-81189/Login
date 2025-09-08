@@ -1,0 +1,12 @@
+-- Create Database
+CREATE DATABASE IF NOT EXISTS company;
+USE company;
+
+-- Create Users Table
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    mobile VARCHAR(15) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
